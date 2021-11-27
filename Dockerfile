@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM arm32v7/adoptopenjdk:16-jre
 RUN addgroup -S spring && adduser -S spring -G spring
 USER spring:spring
 ARG JAR_FILE=target/*.jar
